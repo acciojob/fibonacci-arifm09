@@ -11,3 +11,8 @@ function fibonacci(num) {
 }
 
 module.exports = fibonacci;
+cy.request({
+  method: 'POST',
+  url: 'http://localhost:3000/fibnocci',
+  timeout: 60000 // increase timeout to 60 seconds
+});
